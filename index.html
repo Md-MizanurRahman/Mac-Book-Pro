@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- ___________Tailwind CSS__________ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ____________Plain CSS__________ -->
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body class="">
+    <section class="container mx-auto flex grid-cols-2 justify-center gap-10">
+        <div class="w-1/2 flex justify-center">
+            <img class="size-96 " src="Images/mac.png" alt="" srcset="">
+        </div>
+        <div class="w-1/2 pe-36">
+            <h1 class="text-3xl font-semibold">Customize Your Blue 24-inch iMac With Apple M1 Chip</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nemo explicabo numquam eos, natus
+                doloremque id temporibus enim alias autem mollitia voluptate cumque praesentium esse fugiat nostrum sunt
+                itaque? Autem.</p>
+            <div class="my-10">
+                <h1 class="text-xl font-semibold my-2">Memory</h1>
+                <button id="memory-cost-0" class="rounded border-black border mx-1 p-1 hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:ring-violet-700" type="button">8GB unified Memory</button>
+                <button id="memory-cost-180" class="rounded border-black border mx-1 p-1 hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:ring-violet-700" type="button">16GB unified Memory</button>     
+            </div>    
+            <div class="my-10">
+                <h1 class="text-xl font-semibold my-2">Storage</h1>
+                <button id="storage-cost-0" class="rounded border-black border mx-1 p-1 hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:ring-violet-700" type="button">256GB SSD Storage</button>
+                <button id="storage-cost-100" class="rounded border-black border mx-1 p-1 hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:ring-violet-700" type="button">512GB SSD Storage</button>     
+                <button id="storage-cost-180" class="rounded border-black border mx-1 p-1 hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:ring-violet-700" type="button">1TB SSD Storage</button>     
+            </div>    
+            <div class="my-10">
+                <h1 class="text-xl font-semibold my-2">Choose Your Delivery Option</h1>
+                <button id="delivery-cost-0" class="rounded border-black border mx-1 p-1 hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:ring-violet-700" type="button">Fryday, Aug 25 FREE Prime Delivery</button>
+                <button id="delivery-cost-20" class="rounded border-black border mx-1 p-1 hover:bg-red-500 hover:text-white focus:outline-none focus:ring focus:ring-violet-700" type="button">Fryday, Aug 21 Delivery Charge $20</button>     
+            </div> 
+            <div class="">
+                <table class="w-1/2 border-separate border-spacing-2 border border-slate-500 ...">
+                    <tbody>
+                      <tr>
+                        <td class="font-semibold"><h1>Best Price</h1></td>
+                        <td class="font-semibold"><h1>$<span id="best-price">1299</span></h1></td>
+                      </tr>
+                      <tr>
+                        <td class="font-semibold"><h1>Extra Memory Cost</h1></td>
+                        <td class="font-semibold"><h1>$<span id="memory-price">0</span></h1></td>
+                      </tr>
+                      <tr>
+                        <td class="font-semibold"><h1>Extra Storage Cost</h1></td>
+                        <td class="font-semibold"><h1>$<span id="storage-price">0</span></h1></td>
+                      </tr>
+                      <tr>
+                        <td class="font-semibold"><h1>Delivery Charge</h1></td>
+                        <td class="font-semibold"><h1>$<span id="delivery-price">0</span></h1></td>
+                      </tr>
+                      <tr class="hr-line"></tr>
+                      <tr>
+                        <td class="font-semibold"><h1>Toatl Price</h1></td>
+                        <td class="font-semibold"><h1>$<span id="total-price">1299</span></h1></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="my-5 w-1/2">
+                    <h1>Add Promo Code</h1>
+                    <div class="flex justify-between">
+                        <input id="promo-code" class="border-gray-400 border rounded" type="text">
+                        <button id="apply-button" class="bg-red-500 rounded px-6 py-2 text-white ">Apply</button>
+                    </div>
+                  </div>
+            </div>   
+        </div>
+    </section>
+    <hr class="border-2 border-gray-400">
+    <section>
+        <h1 class="text-4xl font-semibold text-center">Toatl: $<span id="discount-price">1299</span></h1>
+    </section>
+    <!-- _____________Javajcript______________ -->
+    <script src="JavaScript/app.js"></script>
+</body>
+
+</html>
